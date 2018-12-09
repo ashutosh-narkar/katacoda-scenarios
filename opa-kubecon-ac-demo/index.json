@@ -2,7 +2,7 @@
     "id": "opa-kubecon-ac-demo",
     "pathwayId": "opa",
     "pathwayTitle": "OPA",
-    "title": "Kubernetes Admission Control with OPA",
+    "title": "Kubernetes Admission Control with OPA (Open Policy Agent)",
     "description": "Learn how to enforce custom policies on Kubernetes objects using OPA",
     "difficulty": "beginner",
     "time": "10-15 minutes",
