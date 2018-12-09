@@ -2,7 +2,7 @@
 
 In this scenario, you will learn how to enforce custom policies on Kubernetes objects using OPA.
 
-## Demo:
+## Demo
 
 The demo will show how to **prevent users from creating Kubernetes Ingress objects** that violate the following organization policy:
 
