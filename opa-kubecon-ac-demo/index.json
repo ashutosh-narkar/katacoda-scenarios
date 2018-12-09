@@ -47,6 +47,9 @@
             ]
         }
     },
+    "files": [
+        "ingress-conflicts.rego"
+      ],
     "environment": {
         "showdashboard": true,
         "dashboards": [{"name": "Demo", "port": 80}],
