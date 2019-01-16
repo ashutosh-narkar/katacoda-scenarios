@@ -1,0 +1,86 @@
+{
+    "id": "opa-ceph",
+    "pathwayId": "opa",
+    "pathwayTitle": "OPA",
+    "title": "Ceph Authorization with OPA (Open Policy Agent)",
+    "description": "Learn how to enforce custom policies over the S3 API to the Ceph Storage Cluster with OPA",
+    "difficulty": "beginner",
+    "time": "10-15 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Deploy the Rook Operator",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - Deploy OPA on top of Kubernetes",
+                "text": "step2.md"
+            },
+            {
+                "title": "Step 3 - Create a Ceph Cluster",
+                "text": "step3.md"
+            },
+            {
+                "title": "Step 4 - Configure Ceph to use OPA",
+                "text": "step4.md"
+            },
+            {
+                "title": "Step 5 - Create the Ceph Object Store",
+                "text": "step5.md"
+            },
+            {
+                "title": "Step 6 - Create Object Store Users",
+                "text": "step6.md"
+            },
+            {
+                "title": "Step 7 - Understanding the OPA policy",
+                "text": "step7.md"
+            },
+            {
+                "title": "Step 8 - Create the S3 access test script",
+                "text": "step8.md"
+            },
+            {
+                "title": "Step 9 - Exercise the OPA policy",
+                "text": "step9.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+              {"file": "operator.yaml", "target": "/root"},
+              {"file": "opa.yaml", "target": "/root"},
+              {"file": "cluster.yaml", "target": "/root"},
+              {"file": "object.yaml", "target": "/root"},
+              {"file": "rgw-external.yaml", "target": "/root"},
+              {"file": "object-user-alice.yaml", "target": "/root"},
+              {"file": "object-user-bob.yaml", "target": "/root"},
+              {"file": "authz.rego", "target": "/root"},
+              {"file": "s3test.py", "target": "/root"}
+            ]
+        }
+    },
+    "files": [
+        "authz.rego",
+        "s3test.py"
+      ],
+    "environment": {
+        "showdashboard": true,
+        "hideintro": false,
+        "hidefinish": false,
+        "uilayout": "editor-terminal",
+        "uisettings": "yaml",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "dockerimage": "minikube",
+        "port": 80
+    }
+}
