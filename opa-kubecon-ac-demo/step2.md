@@ -6,8 +6,8 @@ Create a `dev` namespace and deploy Alice's version of the Demo App in it.
 
 Wait for all the pods to transition to the `Running` state. Monitor the pod status using the below command:
 
-`kubectl get pods -n dev -w`{{execute}}
+`watch kubectl -n dev get pod`{{execute}}
 
 After all the pods are running, refresh the browser. This time you should **NOT** see Bob !
 
-Before continuing, stop the running command with <kbd>Ctrl</kbd>+<kbd>C</kbd>
+Before continuing, hit ```clear```{{execute interrupt}} to ctrl-c and clear the screen.
