@@ -1,0 +1,57 @@
+{
+    "id": "opa-kube-egress-demo",
+    "pathwayId": "opa",
+    "pathwayTitle": "OPA",
+    "title": "Kubernetes Admission Control with OPA (Open Policy Agent)- Egress",
+    "description": "Learn how to enforce custom egress policies on Kubernetes objects using OPA",
+    "difficulty": "beginner",
+    "time": "10-15 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Step 1 - Install Calico",
+                "text": "step1.md"
+            },
+            {
+                "title": "Step 2 - Deploy Demo App in prod namespace",
+                "text": "step2.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "code": "set-env.sh",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+              {"file": "demo.yaml", "target": "/root"},
+              {"file": "opa-admission-controller.yaml", "target": "/root"},
+              {"file": "opa-ac.sh", "target": "/usr/local/bin", "chmod": "+x"},
+              {"file": "ingress-conflicts.rego", "target": "/root"}
+              {"file": "nginx-network-policy.yaml", "target": "/root"},
+              {"file": "calico-policy-deny-egress.yaml", "target": "/root"},
+              {"file": "calico-policy-allow-dns.yaml", "target": "/root"}
+            ]
+        }
+    },
+    "files": [
+        "ingress-conflicts.rego"
+      ],
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{"name": "Demo", "port": 80}],
+        "hideintro": false,
+        "hidefinish": false,
+        "uilayout": "editor-terminal",
+        "uisettings": "yaml",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "calico",
+        "port": 80
+    }
+}
