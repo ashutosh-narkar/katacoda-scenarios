@@ -31,7 +31,7 @@
               {"file": "demo.yaml", "target": "/root"},
               {"file": "opa-admission-controller.yaml", "target": "/root"},
               {"file": "opa-ac.sh", "target": "/usr/local/bin", "chmod": "+x"},
-              {"file": "ingress-conflicts.rego", "target": "/root"}
+              {"file": "ingress-conflicts.rego", "target": "/root"},
               {"file": "nginx-network-policy.yaml", "target": "/root"},
               {"file": "calico-policy-deny-egress.yaml", "target": "/root"},
               {"file": "calico-policy-allow-dns.yaml", "target": "/root"}
