@@ -42,13 +42,8 @@
         "ingress-conflicts.rego"
       ],
     "environment": {
-        "showdashboard": true,
-        "dashboards": [{"name": "Demo", "port": 30036}],
-        "hideintro": false,
-        "hidefinish": false,
-        "uilayout": "editor-terminal",
-        "uisettings": "yaml",
-        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
     },
     "backend": {
         "port": 8080,
