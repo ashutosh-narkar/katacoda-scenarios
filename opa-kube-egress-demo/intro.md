@@ -1,12 +1,8 @@
 ![OPA Logo](/styra/scenarios/opa-kube-egress-demo/assets/opa.png)
 
+**WIP: DO NOT USE**
+
 In this scenario, you will learn how to enforce custom egress policies on Kubernetes objects using OPA.
-
-## Demo
-
-The demo will show how to **prevent users from creating Kubernetes Ingress objects** that violate the following organization policy:
-
-- Two ingresses in different namespaces must not have the same hostname.
 
 ## OPA
 

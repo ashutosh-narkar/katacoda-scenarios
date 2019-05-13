@@ -2,7 +2,7 @@
     "id": "opa-kube-egress-demo",
     "pathwayId": "opa",
     "pathwayTitle": "OPA",
-    "title": "Kubernetes Admission Control with OPA (Open Policy Agent)- Egress",
+    "title": "WIP: Kubernetes Admission Control with OPA (Open Policy Agent)- Egress",
     "description": "Learn how to enforce custom egress policies on Kubernetes objects using OPA",
     "difficulty": "beginner",
     "time": "10-15 minutes",
